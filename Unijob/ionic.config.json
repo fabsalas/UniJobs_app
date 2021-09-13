@@ -1,0 +1,7 @@
+{
+  "name": "Unijob",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
