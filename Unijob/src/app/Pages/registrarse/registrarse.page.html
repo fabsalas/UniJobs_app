@@ -10,22 +10,34 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col size="1">
+      <ion-col size="12">
+        <h3>¡Aquí comienza tu aventura!</h3>
       </ion-col>
-      <ion-col>  
-        <ion-card>
-          <ion-header>
-          <ion-card-title>Registrate</ion-card-title>
-          <ion-card-subtitle>Completa el formulario</ion-card-subtitle>
-        </ion-header>
-          <ion-card-content>
-            <ion-text>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="1">
-        
+        <br/>
+      <ion-col size="12" style="text-align: center;">
+        <ion-item >
+              <ion-label position="floating">R.U.T:</ion-label>
+              <ion-input type="text" placeholder="Ingrese su RUT (00000000-0)"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item >
+          <ion-label position="floating">Nombre: </ion-label>
+          <ion-input type="text" placeholder="Ingrese su nombre completo"></ion-input>
+        </ion-item>
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-col >
+    <ion-button expand="block" style="margin: 10%;" color="primary">SIGUIENTE</ion-button>
+  </ion-col>
+
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <a style="padding-left: 20%;"  [routerLink]="['/login']">¿Ya tienes una cuenta? </a>
+  </ion-toolbar>
+</ion-footer>
+
+
