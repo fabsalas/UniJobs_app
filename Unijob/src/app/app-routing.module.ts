@@ -22,10 +22,15 @@ const routes: Routes = [
   {
     path: 'registrarse',
     loadChildren: () => import('./Pages/registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
-  },  {
-    path: 'registrarse2',
-    loadChildren: () => import('./registrarse2/registrarse2.module').then( m => m.Registrarse2PageModule)
   },
+  {
+    path: 'registrarse2',
+    loadChildren: () => import('./Pages/registrarse2/registrarse2.module').then( m => m.Registrarse2PageModule)
+  },  {
+    path: 'registrarse3',
+    loadChildren: () => import('./Pages/registrarse3/registrarse3.module').then( m => m.Registrarse3PageModule)
+  },
+
 
 ];
 
