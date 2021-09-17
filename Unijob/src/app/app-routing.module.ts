@@ -25,12 +25,25 @@ const routes: Routes = [
   },
   {
     path: 'registrarse2',
+<<<<<<< Updated upstream
     loadChildren: () => import('./Pages/registrarse2/registrarse2.module').then( m => m.Registrarse2PageModule)
   },  {
     path: 'registrarse3',
     loadChildren: () => import('./Pages/registrarse3/registrarse3.module').then( m => m.Registrarse3PageModule)
   },
 
+=======
+    loadChildren: () => import('./registrarse2/registrarse2.module').then( m => m.Registrarse2PageModule)
+  },
+  {
+    path: 'registrarse3',
+    loadChildren: () => import('./Pages/registrarse3/registrarse3.module').then( m => m.Registrarse3PageModule)
+  },
+  {
+    path: 'registrarse2',
+    loadChildren: () => import('./registrarse2/registrarse2.module').then( m => m.Registrarse2PageModule)
+  },
+>>>>>>> Stashed changes
 
 ];
 
