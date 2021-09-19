@@ -1,3 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="end" type="push" contentId="main" menuId="menu">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="true">
+        <!--Esta etiqute hace que cada vez se da click el menu desaparece-->
+        <ion-item>Cerrar Sesión
+            <ion-icon slot="end" name="log-out-outline"[routerLink]="['/inicio']"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>  
+     
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

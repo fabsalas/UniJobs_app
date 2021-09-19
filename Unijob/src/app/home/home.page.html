@@ -2,35 +2,37 @@
   <ion-toolbar>
     <ion-title>
       Inicio
-      <img style="display: flexbox;margin-left: 70%;height: 25px; width: 25px;"  [routerLink]="['/inicio']" src="../../assets/icon/logout.svg" alt="Cerrar sesión">
     </ion-title>
+    <ion-buttons slot="end">
+      <!--<ion-icon  name="log-out-outline"[routerLink]="['/inicio']"></ion-icon>-->
+      <ion-menu-button menu="menu"><ion-icon name="grid-outline"></ion-icon></ion-menu-button>
+    
+    </ion-buttons>
     
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <ion-list>
     <ion-card>
       <ion-card-header>
         <ion-card-subtitle style="color: grey;margin-bottom: 10px;">Hace 32 minutos</ion-card-subtitle>
-        <img src="../../assets/img/job1.jpg" alt="">
-        <ion-card-title>Fontanero</ion-card-title>
+        <img src="../../assets/img/paseomascota.png" alt="">
+        <ion-card-title>Se necesita paseo de mascota</ion-card-title>
       </ion-card-header>
-    
       <ion-card-content style="text-align:left">
-        Se solicita fontanero con experiencia en la  instalación, reparación y mantenimiento de instalaciones de plomería doméstica...
+        <p>Se requiere persona que pueda realizar un paseo a mi mascota...</p>
       </ion-card-content>
     </ion-card>
 
     <ion-card>
       <ion-card-header>
         <ion-card-subtitle style="color: grey;margin-bottom: 10px;">Hace 56 minutos</ion-card-subtitle>
-        <img src="../../assets/img/job2.jpg" alt="">
-        <ion-card-title>Ayudante de panadero</ion-card-title>
+          <img src="../../assets/img/manicure.jpg" alt="">
+        <ion-card-title>Manicure</ion-card-title>
       </ion-card-header>
-    
       <ion-card-content>
-        Se busca ayudante para panaderia familiar, la experiencia no es necesaria, pero debe tener ganas de aprender y una buena disposición...
+        <p>Se busca persona con dispoción inmediata para manicure porfavor... </p>
       </ion-card-content>
     </ion-card>
 
@@ -57,6 +59,7 @@
         Busco un buen dj que pueda tocar el día martes 28, no es un evento grande ni es necesario que sea un experto, postula y lo...
       </ion-card-content>
     </ion-card>
+  </ion-list>
 
 
 
