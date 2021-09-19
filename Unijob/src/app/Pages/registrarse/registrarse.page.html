@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-buttons>
       <ion-back-button slot="start"></ion-back-button>
-      <ion-title>Crea tu cuenta </ion-title>
+      <ion-title texte-center >UniJobs</ion-title>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -11,32 +11,24 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <h3>¡Aquí comienza tu aventura!</h3>
+        <center><h3>¡Aquí comienza tu aventura!</h3></center>
       </ion-col>
         <br/>
       <ion-col size="12" style="text-align: center;">
-        <ion-item >
-          <ion-label position="floating">Nombre: </ion-label>
-          <ion-input type="text" placeholder="Ingrese su nombre completo"></ion-input>
-        </ion-item>
-        <br>
-        <ion-item >
-              <ion-label position="floating">R.U.T:</ion-label>
-              <ion-input type="text" placeholder="Ingrese su RUT "></ion-input>
-        </ion-item>
-        <p style="color:grey;font-size: small; text-align: left;margin-left: 20px;">Formato (00000000-0)</p>
-        <br>
-        <ion-item >
-          <ion-label position="floating">Correo electrónico:</ion-label>
-          <ion-input type="text" placeholder="Ingrese su correo electrónico"></ion-input>
-    </ion-item>
 
+        <ion-item >
+          <ion-label position="floating">Ingrese número de teléfono: </ion-label>
+          <ion-input type="tel" placeholder=" 912345689">+56 </ion-input>
+        </ion-item>
+        <p style="color:grey;font-size: small; text-align: left;margin-left: 20px;">Se le enviará un código de verificación</p>
+        
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <ion-col >
-    <ion-button expand="block" style="margin: 10%;" color="primary" [routerLink]="['/registrarse2']">SIGUIENTE</ion-button>
+    <ion-button  expand="block" style="margin: 10%;" color="primary"  (click)="Mostrar()">ENVIAR SMS</ion-button>
+    <ion-button  expand="block" style="margin: 10%;" color="primary" [routerLink]="['/registrarse2']">SIGUIENTE</ion-button>
   </ion-col>
 
 </ion-content>
