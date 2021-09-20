@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'registrarse3',
     loadChildren: () => import('./Pages/registrarse3/registrarse3.module').then( m => m.Registrarse3PageModule)
+  },  {
+    path: 'registrarse4',
+    loadChildren: () => import('./Pages/registrarse4/registrarse4.module').then( m => m.Registrarse4PageModule)
   },
+
   
 
 ];
