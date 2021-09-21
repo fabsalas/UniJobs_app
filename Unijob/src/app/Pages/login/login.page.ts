@@ -22,7 +22,7 @@ export class LoginPage implements OnInit {
     if (this.usuario == this.usu && this.contra == this.clave){
       this.router.navigate(['/home']);
     }
-    if(this.usuario == null || this.contra ==null){
+    else if(this.usuario == null || this.contra ==null){
       this.presentToast("Usuario o contraseña en blanco")
     }
     else{
