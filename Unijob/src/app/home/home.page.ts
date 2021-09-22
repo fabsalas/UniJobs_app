@@ -8,6 +8,15 @@ import { ToastController } from '@ionic/angular';
 })
 export class HomePage {
  
+  private empleo =[
+    {
+    id : '1',
+    title: 'Paseo de mascota',
+    name: 'Juan',
+    imageURL:'',
+    comment:'Necesito dar un paseo a mi perro, pero no cuento con tiempo'
+  }
+] 
 
   constructor( public toastController: ToastController) {}
    ngOnInit() {
