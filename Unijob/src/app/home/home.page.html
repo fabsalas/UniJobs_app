@@ -10,7 +10,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" (click)="click()">
   <ion-buttons >
     <ion-searchbar animated ></ion-searchbar>
     <ion-button>
@@ -18,12 +18,19 @@
    </ion-button>
   </ion-buttons>
 
-  
+  <ion-list>
+    <ion-item *ngFor="let item of empleo">
+      {{item.title}}
+    </ion-item>
+  </ion-list>
+<!--
   <ion-list>
     <ion-card>
       <ion-card-header>
         <ion-card-subtitle style="color: grey;margin-bottom: 10px;">Hace 32 minutos</ion-card-subtitle>
-        <img src="../../assets/img/paseomascota.png" alt="">
+        <ion-avatar style="width: 4px;">
+          <img src="../../assets/img/paseomascota.png" alt="">
+        </ion-avatar>
         <ion-card-title>Paseo de mascota</ion-card-title>
       </ion-card-header>
       <ion-card-content style="text-align:left">
@@ -88,7 +95,7 @@
       </ion-card-content>
     </ion-card>
   </ion-list>
-
+-->
 
 
 
