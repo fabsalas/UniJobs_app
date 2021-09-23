@@ -19,8 +19,8 @@
   </ion-buttons>
 
 
-  <ion-list (click)="verEmpleo()">
-    <ion-item *ngFor="let item of empleo">
+  <ion-list >
+    <ion-item *ngFor="let item of empleo" [routerLink]="['/home', empleo.id]">
       <ion-label>
         <ion-title>{{item.title}}</ion-title>
       </ion-label>
