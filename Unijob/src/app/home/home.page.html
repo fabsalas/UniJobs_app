@@ -18,11 +18,18 @@
    </ion-button>
   </ion-buttons>
 
-  <ion-list>
+
+  <ion-list (click)="verEmpleo()">
     <ion-item *ngFor="let item of empleo">
-      {{item.title}}
+      <ion-label>
+        <ion-title>{{item.title}}</ion-title>
+      </ion-label>
+      <ion-avatar slot="start">
+        <ion-img [src]="item.imageURL"></ion-img>
+      </ion-avatar>
     </ion-item>
   </ion-list>
+  
 <!--
   <ion-list>
     <ion-card>
