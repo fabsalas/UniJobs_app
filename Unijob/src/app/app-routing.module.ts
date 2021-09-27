@@ -4,7 +4,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    children: [
+      {
+        path: "",
+        loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+      },
+      {
+        path:":empleoId",
+        loadChildren: () => import('./home/empleo-detalle/empleo-detalle.module').then( m => m.EmpleoDetallePageModule )
+      }
+    ]
+    /*loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)*/
   },
   {
     path: '',
@@ -30,7 +40,8 @@ const routes: Routes = [
   {
     path: 'registrarse3',
     loadChildren: () => import('./Pages/registrarse3/registrarse3.module').then( m => m.Registrarse3PageModule)
-  },  {
+  },
+  {
     path: 'registrarse4',
     loadChildren: () => import('./Pages/registrarse4/registrarse4.module').then( m => m.Registrarse4PageModule)
   },
