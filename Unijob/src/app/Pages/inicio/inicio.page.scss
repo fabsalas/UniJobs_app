@@ -13,3 +13,38 @@ p{
     font-size: 4vmax; 
     font-weight: bold;  
 }
+
+ion-slide{
+    display: block;
+}
+.slide-img-padding{
+    padding: 40px;
+}
+h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+ion-footer{
+    background-color: white;
+}
+.btn-primary{
+    height: 50px;
+    font-size: 20px;
+    
+}
+.btn-secondary{
+    height: 30px;
+    font-size: 15px;
+    color: #8890B2;
+    
+}
+img{
+    max-height: 500px;
+}
+
+@media screen and (max-height: 775px){
+    img{
+        width:90%;
+    }
+}
