@@ -7,7 +7,14 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
- 
+  public ocultar1: boolean = false;
+  click(){
+    this.presentToast("DEBE ENCENDER LA UBICACIÓN PARA ENCONTRAR TRABAJOS CERCA");
+  }
+  accion1(){
+  this.ocultar1 = !this.ocultar1;
+  }
+
   private empleo =[
     {
     id : '1',
@@ -37,9 +44,6 @@ export class HomePage {
   }
  
 
-  click(){
-    this.presentToast("DEBE ENCENDER LA UBICACIÓN PARA ENCONTRAR TRABAJOS CERCA");
-  }
  
 
 
@@ -52,4 +56,5 @@ export class HomePage {
     );
     toast.present();
   }
+
 }
