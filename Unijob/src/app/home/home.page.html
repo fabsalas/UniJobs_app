@@ -18,14 +18,20 @@
     
     <ion-item *ngFor="let item of empleo" [routerLink]="['/home', empleo.id]">
       <ion-label>
-        <ion-title>{{item.title}}</ion-title>
+        <ion-title style="display: block;float:left;">{{item.title}}</ion-title>
       </ion-label>
       <ion-avatar slot="start">
         <ion-img [src]="item.imageURL"></ion-img>
       </ion-avatar>
     </ion-item>
   </ion-list>
-  
+
+  <div *ngIf="ocultar2">
+    <br>
+    <img src="../../assets/icon/ubicacion.png" alt="" >
+    
+    <h3  >Upps.. <br> <h2>Debes encender tu ubicación para acceder a los trabajos cercanos</h2></h3>
+  </div>
 
 
 </ion-content>

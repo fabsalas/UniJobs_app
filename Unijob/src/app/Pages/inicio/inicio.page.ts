@@ -10,7 +10,7 @@ export class InicioPage{
   slides = [
     {
     img: '../../../assets/img/postjob.png',
-    titulo: 'Publica fácilmente tu oferta  de trabajo cuando quieras' 
+    titulo: 'Publica fácilmente tu oferta  de trabajo cuando lo requieras' 
     },
     {
       img: '../../../assets/img/seejob.png',
